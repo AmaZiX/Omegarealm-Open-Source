@@ -17,7 +17,6 @@ public class BreakLeaves implements Listener {
         Player p = e.getPlayer();
         if(e.getBlock().getType() == Material.LEAVES){
             if(!(p.hasPermission("treefruits.bypass") || p.isOp())) {
-
                 if (!(p.getGameMode() == GameMode.CREATIVE)) {
                     if (percent < 0.05) {
                         p.getInventory().addItem(new ItemStack(Material.SAPLING));
