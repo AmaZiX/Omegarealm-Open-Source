@@ -7,6 +7,24 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class Fruits {
 
+    public static ItemStack lychee(){
+        ItemStack lychee = new ItemStack(Material.APPLE);
+        ItemMeta meta = lychee.getItemMeta();
+        meta.setDisplayName("" + ChatColor.LIGHT_PURPLE + "Lychee");
+        lychee.setItemMeta(meta);
+
+        return lychee;
+    }
+
+    public static ItemStack mango(){
+        ItemStack mango = new ItemStack(Material.GOLDEN_APPLE);
+        ItemMeta meta = mango.getItemMeta();
+        meta.setDisplayName("" + ChatColor.GREEN + "Mango");
+        mango.setItemMeta(meta);
+
+        return mango;
+    }
+
     public static ItemStack peach(){
         ItemStack peach = new ItemStack(Material.APPLE);
         ItemMeta meta = peach.getItemMeta();
